@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ker Xiang Teh - Resume</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f0f0f0; color: #1a1a1a; line-height: 1.5; }
+  .page { max-width: 850px; margin: 1.5rem auto; background: #fff; padding: 2.2rem 2.6rem; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+
+  .kw-note { max-width: 850px; margin: 0.8rem auto 0; background: #fefce8; border: 1px solid #fde68a; border-radius: 6px; padding: 1rem 1.4rem; font-size: 12px; color: #92400e; line-height: 1.6; }
+  .kw-note strong { color: #78350f; }
+  .kw-note .kw { background: #fef9c3; padding: 1px 4px; border-radius: 3px; font-weight: 600; font-size: 11px; }
+
+  .header { border-bottom: 2.5px solid #2563eb; padding-bottom: 0.8rem; margin-bottom: 1rem; }
+  .header h1 { font-weight: 300; font-size: 2rem; letter-spacing: -0.03em; color: #111; }
+  .header .role { font-size: 1rem; font-weight: 500; color: #555; margin-bottom: 0.45rem; }
+  .contact { display: flex; flex-wrap: wrap; gap: 0.35rem 1.3rem; font-size: 12px; color: #666; }
+  .contact span::before { content: ''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #2563eb; margin-right: 0.4rem; vertical-align: middle; position: relative; top: -1px; }
+
+  .sec-title { font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.11em; color: #2563eb; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.2rem; margin: 1.15rem 0 0.55rem; }
+
+  .summary { font-size: 13px; color: #333; line-height: 1.6; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .tag { background: #eff3ff; color: #333; padding: 0.18rem 0.55rem; border-radius: 4px; font-size: 11.5px; border: 1px solid #dbe4ff; }
+  .tools-line { margin-top: 0.5rem; font-size: 12.5px; color: #555; }
+  .tools-line strong { color: #333; }
+
+  .job { margin-bottom: 0.85rem; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; }
+  .job-left { font-size: 13.5px; }
+  .jt { font-weight: 700; }
+  .jc { font-weight: 600; color: #2563eb; }
+  .job-date { font-size: 11.5px; color: #777; white-space: nowrap; }
+  .job ul { margin: 0.2rem 0 0 1.15rem; padding: 0; }
+  .job li { font-size: 12.5px; margin-bottom: 0.15rem; line-height: 1.55; }
+
+  .edu { margin-bottom: 0.4rem; }
+  .edu-head { display: flex; justify-content: space-between; flex-wrap: wrap; }
+  .edu-school { font-weight: 700; font-size: 13.5px; }
+  .edu-deg { font-size: 12.5px; color: #555; }
+  .edu-date { font-size: 11.5px; color: #777; }
+
+  @media (max-width: 600px) {
+    .page { padding: 1.2rem 1rem; }
+    .job-head, .edu-head { flex-direction: column; }
+  }
+
+  /* Must stay last: equal-specificity screen rules above would otherwise override these */
+  @media print {
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    @page { margin: 0.45in 0.55in; size: letter; }
+    body { background: #fff; }
+    .page { box-shadow: none; border: none; margin: 0; padding: 0; max-width: none; }
+    .kw-note { display: none; }
+    .job li, .job-head, .edu { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header class="header">
+    <h1>Ker Xiang Teh</h1>
+    <div class="role">Application Security Engineer</div>
+    <div class="contact">
+      <span>Waco, Texas</span>
+      <span>contact@kerxiangteh.com</span>
+      <span>linkedin.com/in/ker-xiang-teh-a24343101</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-title">Professional Summary</div>
+    <p class="summary">Application Security Engineer with 10+ years in IT security and 3+ years owning enterprise application security programs. Sets standards and builds shared guardrails that engineering teams across the organization adopt, rather than fixing issues one at a time. Experienced in building vulnerability management pipelines, driving remediation in services owned by other teams, conducting threat modeling and secure design reviews, and reducing real risk across web and cloud systems. Hands-on with Python, AWS, Terraform, and CI/CD security. Practical user of AI-augmented security automation for triage, prioritization, and remediation guidance at scale.</p>
+  </section>
+
+  <section>
+    <div class="sec-title">Technical Skills</div>
+    <div class="skills">
+      <span class="tag">Application Security Program Ownership</span>
+      <span class="tag">Vulnerability Management Pipeline</span>
+      <span class="tag">Threat Modeling</span>
+      <span class="tag">Secure Design Review</span>
+      <span class="tag">Python</span>
+      <span class="tag">Terraform</span>
+      <span class="tag">AWS (Lambda, IAM / Least Privilege, S3, VPC, API Gateway)</span>
+      <span class="tag">CI/CD Security (GitLab)</span>
+      <span class="tag">Secrets Handling (Vault)</span>
+      <span class="tag">DAST / SAST / SCA</span>
+      <span class="tag">Code Review</span>
+      <span class="tag">GCP / GKE / Kubernetes</span>
+      <span class="tag">Security Guardrails</span>
+      <span class="tag">AI-Augmented Security Automation</span>
+      <span class="tag">Developer Enablement</span>
+      <span class="tag">Penetration Testing</span>
+      <span class="tag">LLM Security Testing</span>
+      <span class="tag">Mentorship</span>
+    </div>
+    <div class="tools-line"><strong>Security tooling:</strong> Black Duck &middot; Wiz &middot; Semgrep &middot; OWASP ZAP &middot; RapiDAST &middot; Burp Suite &middot; Garak &middot; Imperva &middot; Cloud Armor &middot; Datadog &middot; Okta</div>
+  </section>
+
+  <section>
+    <div class="sec-title">Professional Experience</div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-left"><span class="jt">Application Security Engineer</span> &middot; <span class="jc">H-E-B, LP</span></div>
+        <div class="job-date">June 2023 - Present &middot; Texas</div>
+      </div>
+      <p style="font-size:12px; color:#555; margin: 0.15rem 0 0.2rem 0; font-style:italic;">One of the largest privately held companies in the United States. Member of the AppSec team within Digital Security Architecture &amp; Engineering.</p>
+      <ul>
+        <li>Owned the enterprise DAST program: scanner migration and evaluation, authenticated scanning for Okta-protected applications, and secrets handling for scan credentials via Vault.</li>
+        <li>Owned and operated core components of the application security program, including vulnerability management pipeline standards, scanning tool integrations, and guardrails that prevent entire classes of defects from recurring across web and cloud applications.</li>
+        <li>Led the external, live-testing security review for the externalization of an API gateway, covering WAF bypass and fail-open testing, load testing, payload testing with Burp Suite, container image scanning with reachability verification, and TLS checks. Documented the findings and coordinated with other reviewers on source and IAM-focused reviews to close coverage gaps.</li>
+        <li>Led a combined code review and live testing (UAT) security assessment of an internal data self-service portal, and documented findings and prioritized recommendations for the owning team.</li>
+        <li>Led application security reviews and threat models for high-impact work across web, backend, and cloud systems, including an internal data platform and a customer-facing web application, documenting risk decisions with clear mitigation plans. Reviewed Python-based Lambda service code and explained remediation to the engineers who wrote it.</li>
+        <li>Extended the RapidAST DAST framework with Garak to security-test an internal LLM application endpoint, and documented the implementation and results for the team.</li>
+        <li>Responded to security incidents with rapid triage and remediation guidance, including malicious npm supply-chain campaigns, an authentication bypass in a GitLab MCP server (CVE-2026-61560) where Clutch was used to identify which users had the affected version installed, and zero-day threat hunting.</li>
+        <li>Mentored new AppSec team members on tooling, scanning workflows, and security review practices, and remain their go-to resource for how-to questions.</li>
+        <li>Engineered guardrails that scaled beyond the AppSec team: Terraform-managed scanning infrastructure with OIDC authentication and IAM permission boundaries, CI/CD pipeline security checks in GitLab, shared scanning templates with global tuning baselines, and secure-by-default patterns for AWS and GCP workloads.</li>
+        <li>Built AI-augmented automation for security finding triage, prioritization with service context, and remediation guidance engineers could act on. Wrote the Python Lambda forwarders, parsers, and webhook receivers that normalized findings from multiple DAST and SCA tools into a centralized vulnerability management platform, and automated retests, drift cleanup, and alerting across AWS (Lambda, S3, CloudWatch) and GCP.</li>
+        <li>Drove vulnerability management outcomes by triaging and prioritizing findings from DAST scanning, SAST and SCA (Semgrep), and penetration test results, then partnering with engineering teams to get fixes shipped and verified across services owned by other teams.</li>
+        <li>Supported developer teams by resolving 400+ AppSec tickets and rotating on-call for Semgrep, Vault, certificates, DAST troubleshooting, and security platform onboarding, acting as a security champion embedded within engineering workflows and reducing friction in secure software delivery. Authored onboarding documentation, scanning implementation guides, and knowledge base articles that let teams self-serve.</li>
+        <li>Improved cloud security posture by investigating and reducing false-positive volume in GCP findings, tightening IAM and RBAC controls, and restricting external GKE control-plane access with least-privilege policies.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-left"><span class="jt">Field Engineer</span> &middot; <span class="jc">Straight Edge Technology, Inc.</span></div>
+        <div class="job-date">July 2019 - Nov 2020 &middot; Corpus Christi, TX</div>
+      </div>
+      <ul>
+        <li>Mentored technicians and led technical issue resolution for enterprise clients in an MSP environment, analyzing server diagnostics and web application issues.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-left"><span class="jt">Field Technician</span> &middot; <span class="jc">Straight Edge Technology, Inc.</span></div>
+        <div class="job-date">Nov 2018 - July 2019 &middot; Corpus Christi, TX</div>
+      </div>
+      <ul>
+        <li>Provided hardware and software support to remote users, exceeding weekly ticket closure targets by 20% through process improvements.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-left"><span class="jt">Network Engineer</span> &middot; <span class="jc">Southern Networks</span></div>
+        <div class="job-date">June 2016 - Nov 2018 &middot; Corpus Christi, TX</div>
+      </div>
+      <ul>
+        <li>Configured Cisco ASA firewalls, IDS/IPS, and NAS systems for enterprise clients. Automated backup processes and supported secure network operations including VPN and access control management.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-title">Education</div>
+    <div class="edu">
+      <div class="edu-head">
+        <div>
+          <div class="edu-school">The University of Texas at San Antonio</div>
+          <div class="edu-deg">Bachelor of Science, Computer Science - Software Engineering</div>
+        </div>
+        <div class="edu-date">May 2023</div>
+      </div>
+    </div>
+    <div class="edu">
+      <div class="edu-head">
+        <div>
+          <div class="edu-school">Del Mar College</div>
+          <div class="edu-deg">Associate's Degree, Computer Science - Networking &amp; Security</div>
+        </div>
+        <div class="edu-date">May 2015</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-title">Additional</div>
+    <div class="edu">
+      <div class="edu-head">
+        <div>
+          <div class="edu-school">CS Tutor / Peer Leader - Level 3</div>
+          <div class="edu-deg">UTSA. Led workshops, reviewed student code, tutored CS and Calculus courses (Aug 2021 - Mar 2023)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
