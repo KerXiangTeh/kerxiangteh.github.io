@@ -9,6 +9,7 @@ Personal portfolio and resume for Ker Xiang Teh, Application Security Engineer. 
 | `index.html` | Single-page portfolio (hero, experience timeline, skills, contact). Dark mode by default with a light-mode toggle. |
 | `Ker_Xiang_Teh_Resume.html` | Print-formatted resume. Open it and use Print, then Save as PDF. |
 | `CNAME` | Tells GitHub Pages to serve this site on the custom domain. Do not delete. |
+| `assets/images/` | Images used by the site (headshot). |
 
 There is no build step: plain HTML, CSS, and a small amount of vanilla JavaScript with no external dependencies.
 
