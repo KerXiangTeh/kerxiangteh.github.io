@@ -106,10 +106,9 @@
 
         .hero-visual { position: relative; display: grid; place-items: center; min-height: 340px; }
         .avatar {
-            width: min(300px, 70vw); aspect-ratio: 1; border-radius: 50%;
-            display: grid; place-items: center;
-            font-size: 5rem; font-weight: 800; letter-spacing: -0.04em; color: #fff;
-            background: radial-gradient(circle at 30% 25%, #6ea0ff, #2563eb 55%, #1e3a8a);
+            width: min(300px, 70vw); height: auto; aspect-ratio: 1; border-radius: 50%;
+            object-fit: cover; object-position: center 25%;
+            background: var(--surface);
             border: 6px solid var(--surface);
             box-shadow: var(--shadow), 0 0 0 1px var(--border);
         }
@@ -247,8 +246,8 @@
                     <a class="btn email-link" href="#contact">Let's Talk</a>
                 </div>
             </div>
-            <div class="hero-visual" aria-hidden="true">
-                <div class="avatar">KXT</div>
+            <div class="hero-visual">
+                <img class="avatar" src="profile_headshot.jpg" alt="Headshot of Ker Xiang Teh" width="400" height="400" fetchpriority="high">
                 <div class="stat s1"><b>10+</b><small>Years in IT security</small></div>
                 <div class="stat s2"><b>3+</b><small>Years in AppSec</small></div>
                 <div class="stat s3"><b>400+</b><small>AppSec engagements</small></div>
